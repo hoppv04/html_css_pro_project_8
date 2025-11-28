@@ -1,5 +1,5 @@
 // Filter
-.filter {
+.filter-btn {
   display: flex;
   align-items: center;
   gap: 14px;
@@ -36,5 +36,52 @@
 
   &__icon--liked {
     margin-top: 8px;
+  }
+}
+
+// Buttons
+.btn {
+  height: 46px;
+  padding: 0 20px;
+  background-color: #f8f8fb;
+  border-radius: 6px;
+
+  font-size: 1.8rem;
+  font-weight: 500;
+  user-select: none;
+
+  + .btn {
+    margin-left: 20px;
+  }
+
+  &--text {
+    color: #9e9da8;
+    background-color: transparent;
+
+    font-weight: 400;
+  }
+
+  &--primary {
+    color: #171c28;
+    background-color: #ffb700;
+  }
+
+  &--outline {
+    background-color: transparent;
+    border: 1px solid #d2d1d6;
+  }
+
+  &--round {
+    border-radius: 99px;
+  }
+
+  [disabled],
+  &--disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  &:hover {
+    opacity: 0.9;
   }
 }

@@ -157,7 +157,9 @@ function initJsToggle() {
     if (!target) {
       document.body.innerText = `Cần thêm toggle-target cho: ${button.outerHTML}`;
     }
-    button.onclick = () => {
+    button.onclick = (e) => {
+      e.preventDefault();
+
       if (!$(target)) {
         document.body.innerText = `Không tìm thấy phần tử "${target}"`;
         return;
@@ -168,6 +170,15 @@ function initJsToggle() {
         $(target).classList.toggle("hide", !isHidden);
         $(target).classList.toggle("show", isHidden);
       });
+    };
+
+    document.onclick = function (e) {
+      if (!e.target.closest(target)) {
+        const isHidden = $(target).classList.contains("hide");
+        if (!isHidden) {
+          button.click();
+        }
+      }
     };
   }
 }

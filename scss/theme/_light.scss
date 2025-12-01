@@ -12,6 +12,9 @@ html {
   --top-act-group-shadow: rgba(237, 237, 246, 0.2);
   --top-act-group-separate: #ededf6;
 
+  // Footer
+  --footer-bg: var(--header-bg);
+
   @include abstracts.screen(lg) {
     --header-bg: #fff;
     --header-shadow: rgba(237, 237, 246, 0.2);

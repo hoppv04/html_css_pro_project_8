@@ -35,13 +35,15 @@ button,
 img,
 input,
 textarea,
-select {
+select,
+label {
   font-family: inherit;
   color: inherit;
   -webkit-tap-highlight-color: transparent;
   outline: none;
   border: none;
   padding: 0;
+  margin: 0;
 }
 
 input {

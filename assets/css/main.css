@@ -1392,6 +1392,7 @@ html.dark {
 }
 html.dark {
   --search-bar-bg: #171c28;
+  --review-card-bg: #171c28;
 }
 
 html {
@@ -1465,6 +1466,12 @@ html {
 }
 html {
   --search-bar-bg: #fff;
+  --review-card-bg: #fafafa;
+}
+@media (max-width: 767.998px) {
+  html {
+    --review-card-bg: #fff;
+  }
 }
 
 .top-act__btn, .top-act__group, .top-act, .navbar__link, .navbar__list, .top-bar {
@@ -2812,6 +2819,55 @@ html {
   height: 100%;
 }
 
+.review-card {
+  padding: 30px;
+  border-radius: 16px;
+  background-color: var(--review-card-bg);
+}
+.review-card__content {
+  display: flex;
+  gap: 20px;
+}
+.review-card__avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+@media (max-width: 767.998px) {
+  .review-card__avatar {
+    width: 60px;
+    height: 60px;
+  }
+}
+.review-card__title {
+  font-size: 2.2rem;
+  font-weight: 500;
+  line-height: 145.455%;
+}
+@media (max-width: 767.998px) {
+  .review-card__title {
+    font-size: 1.8rem;
+    line-height: 144.444%;
+  }
+}
+.review-card__desc {
+  margin-top: 10px;
+  line-height: 150%;
+}
+.review-card__rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 20px;
+}
+.review-card__rating-title {
+  margin-left: 12px;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 144.444%;
+}
+
 .home {
   margin-bottom: 50px;
 }
@@ -3220,6 +3276,63 @@ html {
 @media (max-width: 767.998px) {
   .prod-body {
     border-radius: 20px;
+  }
+}
+
+.prod-tab__list {
+  display: flex;
+  align-items: center;
+  margin: 0 -30px;
+}
+@media (max-width: 767.998px) {
+  .prod-tab__list {
+    margin: 0 -10px;
+  }
+}
+.prod-tab__item {
+  padding: 0 30px;
+  color: #9e9da8;
+  font-size: 2.2rem;
+  font-weight: 500;
+  line-height: 145.455%;
+  white-space: nowrap;
+}
+@media (max-width: 767.998px) {
+  .prod-tab__item {
+    padding: 0 10px;
+    font-size: 1.4rem;
+    line-height: 142.857%;
+  }
+}
+.prod-tab__item--current {
+  color: inherit;
+}
+.prod-tab__contents {
+  padding-top: 30px;
+}
+@media (max-width: 767.998px) {
+  .prod-tab__contents {
+    padding-top: 20px;
+  }
+}
+.prod-tab__content {
+  display: none;
+}
+.prod-tab__content--current {
+  display: block;
+}
+
+.prod-content__heading {
+  margin-bottom: 30px;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 141.667%;
+}
+@media (max-width: 767.998px) {
+  .prod-content__heading {
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 144.444%;
   }
 }
 

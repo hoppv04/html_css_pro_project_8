@@ -82,4 +82,11 @@ html {
 
   // Search Bar
   --search-bar-bg: #fff;
+
+  // Review Card
+  --review-card-bg: #fafafa;
+
+  @include abstracts.screen(md) {
+    --review-card-bg: #fff;
+  }
 }

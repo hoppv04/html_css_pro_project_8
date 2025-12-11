@@ -89,4 +89,7 @@ html {
   @include abstracts.screen(md) {
     --review-card-bg: #fff;
   }
+
+  // Text Content
+  --text-content-hr-bg: #ebebeb;
 }

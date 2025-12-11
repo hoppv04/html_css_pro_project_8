@@ -238,7 +238,8 @@
     margin: 0 -30px;
 
     @include abstracts.screen(md) {
-      margin: 0 -10px;
+      margin: 0 -20px;
+      flex-wrap: wrap;
     }
   }
 
@@ -250,12 +251,17 @@
     font-weight: 500;
     line-height: 145.455%;
 
+    user-select: none;
     white-space: nowrap;
 
-    @include abstracts.screen(md) {
-      padding: 0 10px;
+    &:not(&--current) {
+      cursor: pointer;
+    }
 
-      font-size: 1.4rem;
+    @include abstracts.screen(md) {
+      padding: 10px 20px;
+
+      font-size: 1.6rem;
       line-height: 142.857%;
     }
 
@@ -278,6 +284,10 @@
     &--current {
       display: block;
     }
+  }
+
+  &__text-content {
+    margin-top: -20px;
   }
 }
 

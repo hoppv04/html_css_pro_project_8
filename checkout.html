@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -149,7 +149,10 @@
                             <img src="./assets/icons/heart-gray.svg" alt="" />
                             <span>Save</span>
                           </button>
-                          <button class="cart-item__control-btn">
+                          <button
+                            class="cart-item__control-btn js-toggle"
+                            toggle-target="#delete-confirm"
+                          >
                             <img src="./assets/icons/trash-can.svg" alt="" />
                             <span>Delete</span>
                           </button>
@@ -219,7 +222,10 @@
                             <img src="./assets/icons/heart-gray.svg" alt="" />
                             <span>Save</span>
                           </button>
-                          <button class="cart-item__control-btn">
+                          <button
+                            class="cart-item__control-btn js-toggle"
+                            toggle-target="#delete-confirm"
+                          >
                             <img src="./assets/icons/trash-can.svg" alt="" />
                             <span>Delete</span>
                           </button>
@@ -290,7 +296,10 @@
                             <img src="./assets/icons/heart-gray.svg" alt="" />
                             <span>Save</span>
                           </button>
-                          <button class="cart-item__control-btn">
+                          <button
+                            class="cart-item__control-btn js-toggle"
+                            toggle-target="#delete-confirm"
+                          >
                             <img src="./assets/icons/trash-can.svg" alt="" />
                             <span>Delete</span>
                           </button>
@@ -397,5 +406,29 @@
     <script>
       load("#footer", "./templates/footer.html");
     </script>
+
+    <!-- Dialog / Modal -->
+    <div class="dialog hide" id="delete-confirm">
+      <div class="dialog__body">
+        <p class="dialog__title">Lorem ipsum dolor sit amet consectetur.</p>
+
+        <footer class="dialog__footer">
+          <button
+            class="btn btn--small btn--text dialog__btn js-toggle"
+            toggle-target="#delete-confirm"
+          >
+            Cancel
+          </button>
+          <button
+            class="btn btn--small btn--primary dialog__btn js-toggle btn--no-margin"
+            toggle-target="#delete-confirm"
+          >
+            Confirm
+          </button>
+        </footer>
+      </div>
+
+      <div class="dialog__overlay"></div>
+    </div>
   </body>
 </html>

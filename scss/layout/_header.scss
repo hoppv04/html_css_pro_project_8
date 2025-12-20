@@ -6,6 +6,9 @@
 }
 
 .header {
+  position: relative;
+  z-index: 2;
+
   background-color: var(--header-bg);
 
   @include abstracts.screen(lg) {
@@ -387,7 +390,7 @@
     position: relative;
 
     padding-top: 100%;
-    border: 1.5px solid var(--header-act-dropdown-border-color);
+    border: 1px solid var(--header-act-dropdown-border-color);
     border-radius: 10px;
   }
 

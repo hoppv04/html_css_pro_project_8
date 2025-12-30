@@ -4094,6 +4094,8 @@ html {
   margin-bottom: 30px;
 }
 .cart-info__heading {
+  display: flex;
+  align-items: center;
   font-size: 2.4rem;
   font-weight: 700;
   line-height: 141.667%;
@@ -4199,6 +4201,9 @@ html {
   .cart-info__checkout-all {
     width: 100%;
   }
+}
+.cart-info__back-arrow {
+  padding-right: 20px;
 }
 
 .cart-info + .cart-info {
@@ -4621,6 +4626,12 @@ html {
 }
 .profile__desc {
   margin-bottom: 16px;
+}
+
+.form-card__footer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 30px;
 }
 
 /*# sourceMappingURL=main.css.map */

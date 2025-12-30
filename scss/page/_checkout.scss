@@ -51,6 +51,9 @@
   }
 
   &__heading {
+    display: flex;
+    align-items: center;
+
     font-size: 2.4rem;
     font-weight: 700;
     line-height: 141.667%;
@@ -183,6 +186,10 @@
     @include abstracts.screen(sm) {
       width: 100%;
     }
+  }
+
+  &__back-arrow {
+    padding-right: 20px;
   }
 }
 
